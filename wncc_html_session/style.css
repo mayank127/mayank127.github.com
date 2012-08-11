@@ -1,0 +1,46 @@
+#container{
+  width:900px;
+  margin:auto;
+}
+#header,#session,#topic,#footer{
+  margin:0;
+  text-align:center;
+}
+#header{
+  background-color:#046;
+  height:40px;
+}
+h1,h2,h3{
+  margin:0;
+}
+#header img{
+  float:left;
+  width:100px;
+  height:40px;
+}
+#session{
+  background-color:#444;
+  color:#601;
+}
+#topic{
+  background-color:#777;
+  color:#601;
+}
+#main{
+  background-color:#999;
+  overflow:hidden;
+}
+.parts{
+  width:33%;
+  height:100%;
+  float:left;
+  padding-left:3px;
+}
+#red{
+  color:red;
+  margin-left:20px;
+}
+#footer{
+  background-color:#FFA500;
+  clear:both;
+}
