@@ -453,11 +453,10 @@ table .grade div:hover{
 	border-left:2px dashed #036;
 	padding:2%;
 }
-.error{
-	font-size:10px; 
+
+label.error { 
+	width: 250px;
 	color: red;
-}
-lable.error { 
-	width: 250px; 
+	font-size:10px;  
 	display: inline;
 }
