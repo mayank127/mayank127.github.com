@@ -125,6 +125,7 @@ function fill_grade_box() {
 	var grade_val = document.querySelectorAll(".grade div");
 	for (var i = 0; i < grade_val.length; i++) {
 		var val = grade_val[i].textContent;
+		val=trim(val);
 		switch(val) {
 			case "AA":
 				grade_val[i].style.width = "100%";
@@ -157,6 +158,12 @@ function fill_grade_box() {
 		}
 	}
 
+}
+function trim(s) {
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	return s;
 }
 
 var events = [["1993/07/12", 1, "I was Born"], ["1996/07/12", 0, "Started School :P"], ["2005/09/20", 1, "Got My first computer"], ["2009/05/25", 0, "Completed 10th"], ["2011/05/25", 0, "Completed 12th"], ["2011/07/22", 0, "Started First year at IITB"], ["2011/07/12", 1, "Turned 18 ;)"]];
