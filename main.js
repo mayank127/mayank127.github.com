@@ -166,6 +166,11 @@ function trim(s) {
 	return s;
 }
 
+function placeimages(){
+	
+	
+}
+
 var events = [["1993/07/12", 1, "I was Born"], ["1996/07/12", 0, "Started School :P"], ["2005/09/20", 1, "Got My first computer"], ["2009/05/25", 0, "Completed 10th"], ["2011/05/25", 0, "Completed 12th"], ["2011/07/22", 0, "Started First year at IITB"], ["2011/07/12", 1, "Turned 18 ;)"]];
 var monthLocale = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function all() {
