@@ -6,6 +6,39 @@ function logosad() {
 	document.querySelector("#logo").style.backgroundImage = "url(Images/cartoon2.png)";
 }
 
+function logo(id) {
+	switch(id){
+		case 0:
+			document.querySelector("#logo").style.backgroundPosition = "top left"
+			break;
+		case 1:
+			document.querySelector("#logo").style.backgroundPosition = "top center"
+			break;
+		case 2:
+			document.querySelector("#logo").style.backgroundPosition = "center left"
+			break;
+		case 3:
+			document.querySelector("#logo").style.backgroundPosition = "center"
+			break;
+		case 4:
+			document.querySelector("#logo").style.backgroundPosition = "bottom left"
+			break;
+		case 5:
+			document.querySelector("#logo").style.backgroundPosition = "top right"
+			break;
+		case 6:
+			document.querySelector("#logo").style.backgroundPosition = "center right"
+			break;
+		case 7:
+			document.querySelector("#logo").style.backgroundPosition = "bottom center"
+			break;
+		case 8:
+			document.querySelector("#logo").style.backgroundPosition = "bottom right"
+			break;
+			
+	}
+}
+
 function nofdays() {
 	var birthdate = new Date("1993/07/12");
 	var currentdate = new Date();
