@@ -33,6 +33,9 @@
 							<li id="link-projects" onmouseover="logo(3)" onmouseout="logo(0)">
 								<a href="#projects" onclick="smoothscroll('projects')">Projects</a>
 							</li>
+							<li onmouseover="logo(6)" onmouseout="logo(0)">
+								<a href="group.html">Group</a>
+							</li>
 							<li id="link-resume" onmouseover="logo(4)" onmouseout="logo(0)">
 								<a href="#resume" onclick="smoothscroll('resume')">Resume</a>
 							</li>
@@ -379,10 +382,10 @@
 						&nbsp;
 					</div>
 					<ul id="project-list">
-						<li><a id="star_wars" href="https://github.com/mayank127/Shooting-Obstacle"><img src="Images/star_wars.png"/></a></li>
-						<li><a id="ball_pool" href="https://github.com/mayank127/9-Ball-Pool"> <img src="Images/9_ball_pool.png"/></a></li>
-						<li><a id="game_controller" href="https://github.com/wncc/android-game-controller"><img src="Images/android_game_controller.png"/></a></li>
-						<li><a id="img2pdf" href="https://github.com/mayank127/img2pdf"><img src="Images/img2pdf.png"/></a></li>
+						<li><a id="star_wars" onclick="projectViewer(1)" ><img src="Images/star_wars.png"/></a></li>
+						<li><a id="ball_pool" onclick="projectViewer(2)" > <img src="Images/9_ball_pool.png"/></a></li>
+						<li><a id="game_controller" onclick="projectViewer(3)" ><img src="Images/android_game_controller.png"/></a></li>
+						<li><a id="img2pdf" onclick="projectViewer(4)" ><img src="Images/img2pdf.png"/></a></li>
 					</ul>
 				</div>
 			</section>
@@ -452,7 +455,34 @@
 					<a href="http://www.linkedin.com/in/mayank127" name="Join me on LinkedIn"> </a>
 				</li>
 			</ul>
+			<div id="black_contain">
+				<div class="constraint">
+					<div id="project-info">
+						<div id="project-info-image">
+						</div>
+						<div id="project-info-box">
+							<div id="close-button" onclick="projectViewer(0)">
+								X
+							</div>
+							<div id="project-info-data">
+								<strong>9 Ball Pool<br><br>
+								Course Project : CS 152<br><br>
+								Under Guidance of Prof. Amitabh Sanyal<br><br></strong>
+								->Made a computer billiards game using PLT Scheme programming language in Dr. Racket
+								interface (Functional Programming).<br><br>
+								->Used World feature in Dr. Racket for implementation of graphics in the game.<br><br>
+								->Also implemented AI using mini-max algorithm for choosing of shot to be played by computer
+								player.<br><br>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
 			<a href="#intro" id="to-top" name="to-top" onclick="smoothscroll('intro')"> </a>
+			<div id="arrow">
+				....CS 296 Group Page Here
+			</div>
 			<footer id="footer">
 				Created By :  Mayank Meghwanshi
 			</footer>
