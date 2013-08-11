@@ -1,11 +1,3 @@
-function logohappy() {
-	document.querySelector("#logo").style.backgroundImage = "url(Images/cartoon1.png)";
-}
-
-function logosad() {
-	document.querySelector("#logo").style.backgroundImage = "url(Images/cartoon2.png)";
-}
-
 function logo(id) {
 	switch(id){
 		case 0:
@@ -135,24 +127,7 @@ function smoothscroll(id) {
 }
 
 
-$(document).ready(function() {
-	$("#myform").validate({
-		debug : false,
-		rules : {
-			name : "required",
-			message : "required",
-			email : {
-				required : true,
-				email : true
-			}
-		},
-		messages : {
-			name : "Enter Your name",
-			email : "Enter a valid Email",
-			message : "Enter some message",
-		}
-	});
-});
+
 
 function fill_grade_box() {
 	var grade_val = document.querySelectorAll(".grade div");
@@ -199,104 +174,40 @@ function trim(s) {
 	return s;
 }
 
-function projectViewer(i){
-	var proDiv = document.querySelector("#project-info");
-	var proImg = document.querySelector("#project-info-image");
-	var proData = document.querySelector("#project-info-data");
-	currentI = i;
-	switch(i){
-		case 0:
-			proDiv.style.visibility="hidden";
-			unblurBody();
-			break;
-		case 1:
-			proDiv.style.visibility="visible";
-			proImg.style.background="#000 url(Images/star_wars.png) no-repeat center";			
-			proImg.style.backgroundSize="contain";
-			proData.innerHTML=proDataArray[i-1];
-			blurBody();
-			break;
-		case 2:
-			proDiv.style.visibility="visible";			
-			proImg.style.background="#000 url(Images/9_ball_pool.png) no-repeat center";
-			proImg.style.backgroundSize="contain";
-			proData.innerHTML=proDataArray[i-1];
-			blurBody();
-			break;
-		case 3:
-			proDiv.style.visibility="visible";			
-			proImg.style.background="#000 url(Images/android_game_controller.png) no-repeat center";
-			proImg.style.backgroundSize="contain";
-			proData.innerHTML=proDataArray[i-1];
-			blurBody();
-			break;
-		case 4:
-			proDiv.style.visibility="visible";			
-			proImg.style.background="#000 url(Images/img2pdf.png) no-repeat center";
-			proImg.style.backgroundSize="contain";
-			proData.innerHTML=proDataArray[i-1];
-			blurBody();
-			break;
-	}
-}
-function blurBody(){
-	/*var body = document.querySelectorAll("section");
-	for (var i = 0; i < body.length; i++) {
-		body[i].style.backgroundColor="#000";
-		body[i].style.opacity="0.1";
-	}*/
-	var body = document.querySelector("#black_contain");
-	body.style.visibility="visible";
-}
-function unblurBody(){
-	/*var body = document.querySelectorAll("section");
-	for (var i = 0; i < body.length; i++) {
-		body[i].style.opacity="1";
-		body[i].style.backgroundColor="rgba(0,0,0,0)";
-	}*/
-	var body = document.querySelector("#black_contain");
-	body.style.visibility="hidden";
-}
+
 var currentI=0;
 var events = [["1993/07/12", 1, "I was Born"], ["1996/07/12", 0, "Started School :P"], ["2005/09/20", 1, "Got My first computer"], ["2009/05/25", 0, "Completed 10th"], ["2011/05/25", 0, "Completed 12th"], ["2011/07/22", 0, "Started First year at IITB"], ["2011/07/12", 1, "Turned 18 ;)"]];
 var monthLocale = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var proDataArray = ["<strong>Star Wars: Shooting Game<br><br>Course Project : CS 101<br><br>	Under Guidance of Prof. D. B. Phatak</strong><br><br>-> Made a shooting game using C++ (Object Oriented Programming) for shooting obstacle objects moving across screen.<br><br>-> Used EZwindows graphics library in c++ for graphic implementation.<br><br>-> Also made options for changing level, saving high-scores etc.<br><br>","<strong>9 Ball Pool<br><br>Course Project : CS 152<br><br>	Under Guidance of Prof. Amitabh Sanyal<br><br></strong>	-> Made a computer billiards game using PLT Scheme programming language in Dr. Racket interface (Functional Programming).<br><br>-> Used World feature in Dr. Racket for implementation of graphics in the game.<br><br>-> Also implemented AI using mini-max algorithm for choosing of shot to be played by computer	player.<br><br>","<strong>Android Game Controller<br><br>Institute Technical Summer Project</strong><br><br>	-> Made an Android Mobile Application for controlling mouse motion, keyboard direction keys and some other predefined keys by gravity sensors and accelerometer in the phone.<br><br>-> Used TCP socket connection for data transfer from android phone to PC using Wi-Fi.<br><br>-> Made PC interface in JAVA programming language.<br><br>","<strong>Img2Pdf<br><br> Course Project : CS 213<br><br>	Under Guidance of Prof. Varsha Apte<br><br></strong>-> ..."];
 
-function all() {
+window.onscroll = social_icon_move; 
+
+$(document).ready(function() {
 	nofdays();
 	document.querySelector("#events").innerHTML = "mayank1";
 	addall(events);
 	fill_grade_box();
-}
-
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    if (evt.keyCode == 27) {
-        projectViewer(0);
-    }
-    if (evt.keyCode == 39 ) {
-    	switch (currentI){
-    		case 1:
-    		case 2:
-    		case 3:
-    			projectViewer(currentI+1);
-    			break;
-    		case 4:
-    			projectViewer(1);
-    	}
-    }
-    if (evt.keyCode == 37 ) {
-    	switch (currentI){
-    		case 2:
-    		case 3:
-    		case 4:
-    			projectViewer(currentI-1);
-    			break;
-    		case 1:
-    			projectViewer(4);
-    	}
-    }
-};
-
-window.onload = all;
-window.onscroll = social_icon_move; 
+	$.piroBox_ext({
+		piro_speed :700,
+		bg_alpha : 0.5,
+		piro_scroll : true,
+		piro_drag :false,
+		piro_nav_pos: 'bottom'
+	});
+	
+	$("#myform").validate({
+		debug : false,
+		rules : {
+			name : "required",
+			message : "required",
+			email : {
+				required : true,
+				email : true
+			}
+		},
+		messages : {
+			name : "Enter Your name",
+			email : "Enter a valid Email",
+			message : "Enter some message",
+		}
+	});
+});

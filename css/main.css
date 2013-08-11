@@ -3,7 +3,7 @@
 	padding:0px;
 }
 body{
-	background-image:url('Images/bg1.png');
+	background-image:url('../Images/bg1.png');
 	background-repeat:repeat;
 	font-family:"proxima-nova-condensed-1","proxima-nova-condensed-2","Helvetica Neue","Arial";
 	color:#444;
@@ -24,7 +24,7 @@ li{
 	padding:25px 0 50px 0;
 }
 #container{
-	background-image:url('Images/arrow.png');
+	background-image:url('../Images/arrow.png');
 	background-repeat:no-repeat;
 	background-position:center top;
 	border-top:6px solid #026;
@@ -36,7 +36,7 @@ li{
 }
 #logo{
 	
-	background-image:url('Images/faces.png');
+	background-image:url('../Images/faces.png');
 	background-repeat:no-repeat;
 	background-position:top left;
 	height:130px;
@@ -45,7 +45,7 @@ li{
 	margin-bottom:20px;
 }
 #introline{
-	background-image:url('Images/mayank.gif');
+	background-image:url('../Images/mayank.gif');
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:70px;
@@ -93,7 +93,7 @@ li{
 	color:#fff;
 }
 
-#about-me,#acads,#contact,#projects,#resume{
+#about-me,#acads,#contact,#projects,#resume,#books{
 	border-top: 2px dashed #036;
 	overflow:hidden;
 	padding:0 0 50px 0;
@@ -103,7 +103,7 @@ li{
     overflow: hidden;
 }
 #about-image{
-	background-image:url("Images/about.gif");
+	background-image:url("../Images/about.gif");
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:61px;
@@ -116,7 +116,7 @@ li{
 	float:left;
 	border-right:2px dashed #036;
 	padding-right:48px;
-	background-image:url("Images/me.jpg");
+	background-image:url("../Images/me.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	min-height:420px;
@@ -142,24 +142,30 @@ li{
 	text-align: justify;
 }
 #acads-image{
-	background-image:url("Images/acads.gif");
+	background-image:url("../Images/acads.gif");
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:62px;
 }
 #projects-image{
-	background-image:url("Images/projects.gif");
+	background-image:url("../Images/projects.gif");
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:62px;
 }
 #resume-image{
-	background-image:url("Images/resume.gif");
+	background-image:url("../Images/resume.gif");
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:62px;
 }#contact-image{
-	background-image:url("Images/contact.gif");
+	background-image:url("../Images/contact.gif");
+	background-repeat:no-repeat;
+	background-position:center top;
+	min-height:62px;
+}
+#books-image{
+	background-image:url("../Images/books.gif");
 	background-repeat:no-repeat;
 	background-position:center top;
 	min-height:62px;
@@ -180,7 +186,7 @@ li{
 	border-radius:100px;
 	-webkit-border-radius:100px;
 	list-style:none;
-	background:url(Images/bg1.png) rgba(230, 230, 230, 0.9);
+	background:url(../Images/bg1.png) rgba(230, 230, 230, 0.9);
 	min-height:30px;
 }
 #progress-key li{
@@ -193,13 +199,13 @@ li{
 #progress-key li.personal{
 	padding-right:30px;
 	text-align:right;
-	background:url("Images/pin-black.png") no-repeat right center;
+	background:url("../Images/pin-black.png") no-repeat right center;
 	margin-right:5px;
 }
 #progress-key li.professional{
 	padding-left:30px;
 	text-align:left;
-	background:url("Images/pin-red.png") no-repeat left center;
+	background:url("../Images/pin-red.png") no-repeat left center;
 	margin-left:5px;
 }
 #start-date,#end-date{
@@ -242,7 +248,7 @@ li{
 	top:0;
 	height:100%;
 	width:30px;
-	background: url(Images/left.png) no-repeat center rgba(0, 33, 66, 0.6);
+	background: url(../Images/left.png) no-repeat center rgba(0, 33, 66, 0.6);
 }
 #semesters .right{
 	position:absolute;
@@ -250,21 +256,21 @@ li{
 	top:0;
 	height:100%;
 	width:30px;
-	background: url(Images/right.png) no-repeat center rgba(0, 33, 66, 0.6);
+	background: url(../Images/right.png) no-repeat center rgba(0, 33, 66, 0.6);
 }
 .left a{
 	display:block;
 	height:100%;
 }
 .left a:hover{
-	background: url(Images/left.png) no-repeat center rgba(0, 33, 66, 0.9);
+	background: url(../Images/left.png) no-repeat center rgba(0, 33, 66, 0.9);
 }
 .right a{
 	display:block;
 	height:100%;
 }
 .right a:hover{
-	background: url(Images/right.png) no-repeat center rgba(0, 33, 66, 0.9);
+	background: url(../Images/right.png) no-repeat center rgba(0, 33, 66, 0.9);
 }
 table{
 	width:100%;
@@ -297,13 +303,13 @@ table .grade div:hover{
 .header{
 	font-weight:bold;
 	font-size:20px;
-	background:url(Images/bg1.png) rgba(230, 230, 230, 0.9);
+	background:url(../Images/bg1.png) rgba(230, 230, 230, 0.9);
 }
 .heading{
 	font-weight:bolder;
 	font-size:22px;
 	text-align:center;
-	background:url(Images/bg1.png) rgba(230, 230, 230, 0.7);
+	background:url(../Images/bg1.png) rgba(230, 230, 230, 0.7);
 
 }
 
@@ -345,7 +351,7 @@ table .grade div:hover{
 	display:block;
 	width:35px;
 	height:35px;
-	background-image:url('Images/icon-sprite.png');
+	background-image:url('../Images/icon-sprite.png');
 }
 #twitter a{
 	background-position:-39px 1px;
@@ -378,7 +384,7 @@ table .grade div:hover{
 	display:block;
 	width:40px;
 	height:40px;
-	background-image:url('Images/back-to-top.png');
+	background-image:url('../Images/back-to-top.png');
 	background-position:0 0;
 	-webkit-transition:top 0.7s;
 }
@@ -422,11 +428,11 @@ table .grade div:hover{
 }
 #events li.eve0 div{
 	top:-35px;
-	background:url("Images/pin-red.png") no-repeat center;
+	background:url("../Images/pin-red.png") no-repeat center;
 }
 #events li.eve1 div{
 	bottom:-35px;
-	background:url("Images/pin-black.png") no-repeat center;
+	background:url("../Images/pin-black.png") no-repeat center;
 }
 #events li.eve0 div:hover{
 	top:-30px;
@@ -526,13 +532,13 @@ label.error {
 	margin: 2%;
 	height: 100%;
 	float: left;
-	background: #000 url(Images/9_ball_pool.png) no-repeat center contain;
+	background: #000 url(../Images/9_ball_pool.png) no-repeat center contain;
 }
 #project-info-box{
 	width:26%;
 	height: 100%;
 	float: left;
-	background:#fff url('Images/bg1.png');
+	background:#fff url('../Images/bg1.png');
 	margin:1%;
 	padding: 1%;
 }
@@ -551,15 +557,4 @@ label.error {
 	height: 100%;
 	visibility: hidden;
 	background-color: rgba(0,0,0,1);
-}
-#arrow{
-	position: absolute;
-	top:375px;
-	left: 670px;
-	width: 150px;
-	height: 80px;
-	text-align: right;
-	font-size: 15.5px;
-	background: url(Images/c_arrow.png) no-repeat;
-	background-size: contain;
 }

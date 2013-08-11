@@ -1,0 +1,49 @@
+div, a{
+	display:block;
+}
+li{
+	display:list-item;
+	list-style:none;
+}
+body{
+	background-image:url('../Images/bg1.png');
+	background-repeat:repeat;
+	font-family:"proxima-nova-condensed-1","proxima-nova-condensed-2","Helvetica Neue","Arial";
+	color:#444;
+	letter-spacing:-0.1px;
+}
+#container{
+	margin: auto;
+	width:900px;
+	display:block;
+	position:relative;
+	padding:25px 0 50px 0;
+}
+h1{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+}
+h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+#members img{
+	width: 295px;
+}
+#members li{
+	display: inline-block;
+}
+#member-names li{
+	display: inline-block;
+	width: 295px;
+	text-align: center;
+}
+a{
+	color: #444;
+}
+#links li{
+	list-style: disc;
+
+}
